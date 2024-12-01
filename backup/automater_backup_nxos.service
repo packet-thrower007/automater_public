@@ -1,0 +1,9 @@
+[Unit]
+Description=Cisco NXOS Backup Service by Jonathan Davis
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /automater/backup/backup_nxos.py
+
+[Install]
+WantedBy=multi-user.target

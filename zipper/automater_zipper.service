@@ -1,0 +1,9 @@
+[Unit]
+Description=Automater Compress backups by Jonathan Davis
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /automater/zipper/zipper.py
+
+[Install]
+WantedBy=multi-user.target

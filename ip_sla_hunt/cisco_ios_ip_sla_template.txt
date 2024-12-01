@@ -1,0 +1,13 @@
+ip sla 10
+ icmp-echo 1st-HOP-IP source-interface Loopback0
+ip sla 11
+ icmp-echo 2st-HOP-IP source-interface Loopback0
+ip sla 12
+ icmp-echo 3st-HOP-IP source-interface Loopback0
+ip sla 13
+ icmp-echo 4st-HOP-IP source-interface Loopback0
+ip sla 14
+ icmp-echo 5st-HOP-IP source-interface Loopback0
+ip sla 15
+ icmp-echo 6st-HOP-IP source-interface Loopback0
+ip sla group schedule 1 10-15 schedule-period 60 frequency 300 start-time now life forever

@@ -1,0 +1,13 @@
+[Unit]
+Description=Automater Backup Checker Service by Jonathan Davis
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /automater/backup_checker/backup_checker.py
+Restart=always
+RuntimeMaxSec=1d
+
+
+
+[Install]
+WantedBy=multi-user.target

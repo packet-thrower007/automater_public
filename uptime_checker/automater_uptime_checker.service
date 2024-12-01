@@ -1,0 +1,9 @@
+[Unit]
+Description=Cisco Uptime Checker Service by Jonathan Davis
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python /automater/uptime_checker/uptime_checker.py
+
+[Install]
+WantedBy=multi-user.target

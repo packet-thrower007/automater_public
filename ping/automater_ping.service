@@ -1,0 +1,9 @@
+[Unit]
+Description=Automater Ping Service by Jonathan Davis
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python /automater/ping/ping.py
+
+[Install]
+WantedBy=multi-user.target

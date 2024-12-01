@@ -1,0 +1,3 @@
+int vlan 100
+des PC
+no shut
