@@ -1,9 +1,4 @@
 #!/bin/bash
-
-# Copyright 2023 Takuma Nakajima
-# This software is released under the MIT license.
-# https://opensource.org/license/mit/
-
 # This shell script finds the maximum MTU size to the destination IP address by binary search.
 #
 # Example:
